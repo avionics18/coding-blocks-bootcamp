@@ -1,0 +1,129 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+/*utilities*/
+.text-center{
+  text-align: center;
+}
+.btn{
+  background-color: transparent;
+  border: none;
+  border: 1px solid #1a191f;
+  padding: 10px 20px;
+}
+.btn:hover, .btn.active{
+  background-color: #1a191f;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+
+
+/*container*/
+.container{
+  width: 60%;
+  margin: 0 auto;
+}
+
+/*header*/
+header{
+  background-color: #1a191f;
+  color: #cecbdc;
+  padding: 30px 0;
+  font-family: sans-serif;
+  border-bottom: 6px solid #42404e;
+}
+.menu-icon, .brand-name, .search-icon{
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.menu-icon{
+  width: 18%;
+}
+.brand-name{
+  width: 60%;
+  text-align: center;
+}
+.search-icon{
+  width: 18%;
+  text-align: right;
+}
+
+
+/*Navbar*/
+nav{
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+
+/*contacts*/
+main{
+  background-color: #ccc;
+}
+main .contacts{
+  display: inline-block;
+  width: 88%;
+  height: 465px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+main *{
+  margin: 0;
+}
+main .contacts .heading{
+  background-color: #3b3652;
+  color: #ebebeb;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 8px 16px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: sticky;
+  top: 0;
+}
+main .contacts article{
+  background-color: #ebebeb;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin: 8px 16px;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+main .contacts .contact-img{
+  width: 8%;
+  display: inline-block;
+}
+main .contacts .contact-details{
+  width: 60%;
+  display: inline-block;
+}
+main .contacts .contact-details p{
+  color: #444;
+}
+
+main aside{
+  display: inline-block;
+  width: 10%;
+  height: 465px;
+  overflow: auto;
+  background-color: #3b3652;
+}
+main aside a{
+  display: inline-block;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #686380;
+  padding: 5px 10px;
+  margin: 5px 4px;
+  transition: 0.25s;
+}
+main aside a:hover{
+  background-color: #9991c1;
+}
