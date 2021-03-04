@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-color: rgb(18, 20, 27);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn{
+  padding: 10px 26px;
+  font-size: 1.3rem;
+  background: transparent;
+  color: orange;
+  border: 3px solid orange;
+  box-shadow: 0 10px 16px -10px rgba(219, 232, 35, 0);
+  transition: 0.3s;
+}
+.btn:hover{
+  border-color: rgb(219, 232, 35);
+  color: rgb(219, 232, 35);
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 16px -10px rgba(219, 232, 35, 1);
+}
