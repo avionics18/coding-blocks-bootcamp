@@ -34,6 +34,7 @@ p, a, .ff-text{
   border: none;
   padding: 14px 16px;
   border-radius: 6px;
+  user-select: none;
   transition: 0.25s;
 }
 .btn-primary{
