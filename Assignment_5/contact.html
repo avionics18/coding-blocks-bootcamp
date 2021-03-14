@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Avinash Murmu</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/custom-bootstrap.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Page Specific Styling -->
+  <style></style>
+</head>
+
+<body>
+
+  <div class="container-fluid p-0">
+
+
+    <!-- Hambergur Menu -->
+    <button id="ham-menu" class="btn btn-primary"><i class="fas fa-bars"></i></button>
+    <!-- Hambergur Menu -->
+
+
+    <div class="row no-gutters">
+      <div class="col-lg-3" id="left-container">
+        <div class="sidebar">
+          <div id="follow-me" class="p-3 text-center">
+            <h4 class="text-light m-0">Follow Me</h4>
+            <img class="rounded-pill shadow-sm my-3" src="./assets/avinash-square.jpg" width="120" alt="Avinash Murmu">
+            <p class="small text-light ff-heading">Hey! This is Avinash Murmu and I'm a full-stack developer. Welcome to my portfolio.</p>
+            <p>
+              <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.codepen.io/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-codepen"></i></a>
+              <a href="https://www.github.com/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
+          <!-- #follow-me -->
+          <nav class="p-3 mt-3">
+            <a href="index.html" class="nav-items"><i class="fas fa-id-badge mr-2"></i>About Me</a>
+            <a href="resume.html" class="nav-items"><i class="fas fa-align-right mr-2"></i>Resume</a>
+            <a href="projects.html" class="nav-items"><i class="fab fa-app-store mr-2"></i>Projects</a>
+            <a href="certifications.html" class="nav-items"><i class="fab fa-buffer mr-2"></i>Certifications</a>
+            <a href="contact.html" class="nav-items active"><i class="fas fa-envelope mr-2"></i>Contact</a>
+            <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-dark btn-block text-uppercase mt-2">Hire Me<i class="fas fa-laptop-code ml-2"></i></a>
+          </nav>
+          <!-- nav -->
+        </div>
+        <!-- sidebar -->
+      </div>
+      <!-- left-container -->
+
+      <div class="col-lg-9" id="right-container">
+        <div class="content-wrapper">
+          <section class="row">
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h2 class="text-primary font-weight-bold">Let's Talk</h2>
+                  <hr>
+                  <p class="text-secondary">Get in touch via the form below, or by emailing at <a href="#" class="text-primary">avimurmu18@gmail.com</a>.</p>
+                  <!-- Contact Form Row -->
+                  <div class="row my-4">
+                    <div class="col-lg-6 col-md-8 offset-lg-1 offset-md-1">
+                      <form name="portfolioContact" action="/success-submission.html" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <div class="form-group">
+                          <label for="name">Name<span class="text-danger">*</span></label>
+                          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                        </div>
+                        <div class="form-group">
+                          <label for="email">E-mail</label>
+                          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" />
+                        </div>
+                        <div class="form-group">
+                          <label for="msg">Message<span class="text-danger">*</span></label>
+                          <textarea name="msg" id="msg" rows="5" class="form-control" placeholder="Enter your message ..." required="true"></textarea>
+                        </div>
+                        <div class="mb-3">
+                          <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit<i class="fab fa-telegram-plane ml-2"></i></button>
+                      </form>
+                      <br />
+                      <p class="small text-secondary"><code>Note: </code><i>This is a working form configured using netlify forms.</i></p>
+                    </div>
+                    <!-- col-lg-6 -->
+                  </div>
+                  <!-- Contact Form Row -->
+                </div>
+                <!-- card-body wrapper -->
+              </div>
+              <!-- card wrapper -->
+            </div>
+            <!-- col-12 -->
+          </section>
+          <!-- row section -->
+        </div>
+        <!-- content-wrapper -->
+      </div>
+      <!-- right-container -->
+    </div>
+    <!-- row no-gutters -->
+  </div>
+  <!-- container-fluid -->
+
+
+</body>
+
+</html>

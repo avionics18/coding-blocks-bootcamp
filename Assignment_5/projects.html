@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Avinash Murmu</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/custom-bootstrap.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Page Specific Styling -->
+  <style>
+    .project-list .project-list-item{
+      position: relative;
+      height: 320px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+      transition: 0.4s ease-out;
+    }
+    /*Hover state*/
+    .project-list .project-list-item:hover{
+      box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+      transform: translateY(-10px);
+      cursor: pointer;
+    }
+    .project-list-item .project-img{
+      width: 100%;
+      height: 180px;
+      object-position: center;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: 0.4s ease;
+    }
+    /* Hover State */
+    .project-list-item:hover .project-img{
+      height: 100%;
+      opacity: 0.1;
+      filter: grayscale(100%);
+    }
+    .project-list-item .project-header{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      opacity: 0;
+      transform: scale(0.7);
+      transition: opacity 0.4s ease-in;
+    }
+    /* Hover State */
+    .project-list-item:hover .project-header{
+      opacity: 1;
+    }
+    .project-list-item .project-body{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      padding: 16px;
+    }
+    .project-body .project-body-content{
+      opacity: 0;
+      max-height: 0px;
+      transition: 0.4s cubic-bezier(0.2, 0.04, 0.62, 0.96);
+    }
+    /* Hover State */
+    .project-list-item:hover .project-body .project-body-content{
+      opacity: 1;
+      max-height: 320px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid p-0">
+
+
+    <!-- Hambergur Menu -->
+    <button id="ham-menu" class="btn btn-primary"><i class="fas fa-bars"></i></button>
+    <!-- Hambergur Menu -->
+
+
+    <div class="row no-gutters">
+      <div class="col-lg-3" id="left-container">
+        <div class="sidebar">
+          <div id="follow-me" class="p-3 text-center">
+            <h4 class="text-light m-0">Follow Me</h4>
+            <img class="rounded-pill shadow-sm my-3" src="./assets/avinash-square.jpg" width="120" alt="Avinash Murmu">
+            <p class="small text-light ff-heading">Hey! This is Avinash Murmu and I'm a full-stack developer. Welcome to my portfolio.</p>
+            <p>
+              <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.codepen.io/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-codepen"></i></a>
+              <a href="https://www.github.com/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
+          <!-- #follow-me -->
+          <nav class="p-3 mt-3">
+            <a href="index.html" class="nav-items"><i class="fas fa-id-badge mr-2"></i>About Me</a>
+            <a href="resume.html" class="nav-items"><i class="fas fa-align-right mr-2"></i>Resume</a>
+            <a href="projects.html" class="nav-items active"><i class="fab fa-app-store mr-2"></i>Projects</a>
+            <a href="certifications.html" class="nav-items"><i class="fab fa-buffer mr-2"></i>Certifications</a>
+            <a href="contact.html" class="nav-items"><i class="fas fa-envelope mr-2"></i>Contact</a>
+            <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-dark btn-block text-uppercase mt-2">Hire Me<i class="fas fa-laptop-code ml-2"></i></a>
+          </nav>
+          <!-- nav -->
+        </div>
+        <!-- sidebar -->
+      </div>
+      <!-- left-container -->
+      <div class="col-lg-9" id="right-container">
+        <div class="content-wrapper">
+          <section class="row">
+            <div class="col-12">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h2 class="text-primary font-weight-bold">Projects</h2>
+                  <hr>
+                  <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Expedita nobis consequatur ullam officia quasi inventore similique illo dolor dolore libero. Quod et facere, <a href="https://www.github.com/avionics18" class="text-primary">github.com/avionics18</a> expedita consectetur, vel doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+                  <!-- Project List -->
+                  <div class="row mt-4 project-list">
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/lyft.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">CAR RENTAL APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">LYFT</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Bootstrap</span>
+                            <span class="badge badge-warning badge-sm">React</span>
+                            <span class="badge badge-warning badge-sm">Redux</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="https://github.com/avionics18/react-car-rental-app" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://rent-vroom.netlify.app/" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <!-- --------------------------------------------------------------------------------------- -->
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/ratn-dukan.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">ECOMMERCE APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">RATN DUKAN</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Bootstrap</span>
+                            <span class="badge badge-warning badge-sm">React</span>
+                            <span class="badge badge-warning badge-sm">JSON SERVER</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="https://github.com/avionics18/react-nlnmrkt" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://nlnmrkt.netlify.app/" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/job-finder.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">CAREER APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">JOB FINDER</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Bootstrap</span>
+                            <span class="badge badge-warning badge-sm">React</span>
+                            <span class="badge badge-warning badge-sm">Github API</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="https://github.com/avionics18/react-job-finder" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://avionics-job-finder.netlify.app/" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/tasked.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">TODO APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">TASKED</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Bootstrap</span>
+                            <span class="badge badge-warning badge-sm">React</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="https://github.com/avionics18/react-task-tracker" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://avionics-task-tracker.netlify.app/" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/quiziappa.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">QUIZ APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">QUIZIAPPA</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Materialize</span>
+                            <span class="badge badge-warning badge-sm">React</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="https://github.com/avionics18/react-quiz-app" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://quiziapa.netlify.app/" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-md-6">
+                      <!-- Project List Item -->
+                      <div class="project-list-item bg-light border border-primary mb-4">
+                        <img src="./assets/avionics.png" alt="Project Image" class="project-img">
+                        <div class="project-header">
+                          <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm"><i class="far fa-star"></i> Stars</button>
+                            <button class="btn btn-outline-secondary btn-sm">3</button>
+                          </div>
+                        </div>
+                        <!-- project-header -->
+                        <div class="project-body">
+                          <p class="project-body-subtitle font-weight-bold mb-2 small">BLOG APP</p>
+                          <h3 class="project-body-title text-primary font-weight-bold">AVIONICS</h3>
+                          <div class="project-body-tags mb-2">
+                            <span class="badge badge-warning badge-sm">Hugo</span>
+                            <span class="badge badge-warning badge-sm">Netlify CMS</span>
+                            <span class="badge badge-warning badge-sm">Netlify Forms</span>
+                          </div>
+                          <div class="project-body-content">
+                            <p class="project-body-desc text-dark small mb-3">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique beatae cum totam omnis ullam numquam quas, voluptatum magnam sequi dolore.</p>
+                            <p class="project-body-buttons m-0">
+                              <a target="_blank" href="#" class="btn btn-primary btn"><i class="fab fa-github"></i></a>
+                              <a target="_blank" href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-external-link-alt"></i></a>
+                            </p>
+                          </div>
+                          <!-- project-body-content -->
+                        </div>
+                        <!-- project-body -->
+                      </div>
+                      <!-- project-list-item -->
+                    </div>
+                    <!-- col-lg-4 -->
+                    <!-- --------------------------------------------------------------------------------------- -->
+                  </div>
+                  <!-- row -->
+                </div>
+                <!-- card-body wrapper -->
+              </div>
+              <!-- card wrapper-->
+            </div>
+            <!-- col-12 -->
+          </section>
+          <!-- row section -->
+        </div>
+        <!-- content-wrapper -->
+      </div>
+      <!-- right-container -->
+    </div>
+    <!-- row no-gutters -->
+  </div>
+  <!-- container-fluid -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash Murmu | Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./css/custom-bootstrap.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Page Specific Styling -->
+  <style>
+    .hero .my-img-placeholder{
+      width: 100%;
+      height: 100%;
+      background: url('./assets/avinash-rect.jpg') no-repeat center;
+      background-size: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .skills-lang .card{
+      transition: 0.25s;
+    }
+    .skills-lang .card:hover{
+      cursor: pointer;
+      background-image: linear-gradient(0deg, #eee, var(--light));
+      box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 991.98px){
+      .hero .my-img-placeholder{
+        height: 300px !important;
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 991.98px) and (min-width: 768px){
+      .hero .my-img-placeholder{
+        width: 350px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid p-0">
+
+    <!-- Hambergur Menu -->
+    <button id="ham-menu" class="btn btn-primary"><i class="fas fa-bars"></i></button>
+    <!-- Hambergur Menu -->
+
+    <div class="row no-gutters">
+      <div class="col-lg-3" id="left-container">
+        <div class="sidebar">
+          <div id="follow-me" class="p-3 text-center">
+            <h4 class="text-light m-0">Follow Me</h4>
+            <img class="rounded-pill shadow-sm my-3" src="./assets/avinash-square.jpg" width="120" alt="Avinash Murmu">
+            <p class="small text-light ff-heading">Hey! This is Avinash Murmu and I'm a full-stack developer. Welcome to my portfolio.</p>
+            <p>
+              <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.codepen.io/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-codepen"></i></a>
+              <a href="https://www.github.com/avionics18" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-outline-light btn-sm" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
+          <!-- #follow-me -->
+          <nav class="p-3 mt-3">
+            <a href="index.html" class="nav-items active"><i class="fas fa-id-badge mr-2"></i>About Me</a>
+            <a href="resume.html" class="nav-items"><i class="fas fa-align-right mr-2"></i>Resume</a>
+            <a href="projects.html" class="nav-items"><i class="fab fa-app-store mr-2"></i>Projects</a>
+            <a href="certifications.html" class="nav-items"><i class="fab fa-buffer mr-2"></i>Certifications</a>
+            <a href="contact.html" class="nav-items"><i class="fas fa-envelope mr-2"></i>Contact</a>
+            <a href="https://www.linkedin.com/in/avinash-murmu-52b3301a6/" class="btn btn-dark btn-block text-uppercase mt-2">Hire Me<i class="fas fa-laptop-code ml-2"></i></a>
+          </nav>
+          <!-- nav -->
+        </div>
+        <!-- sidebar -->
+      </div>
+      <!-- left-container -->
+      <div class="col-lg-9" id="right-container">
+        <div class="content-wrapper">
+          <section class="row hero mb-5">
+            <div class="col-lg-7 order-lg-1 order-2">
+              <h1 class="font-weight-bold text-primary">Avinash Murmu</h1>
+              <p class="lead">B.Tech - Mining Engineering | <b>IIT(ISM) Dhanbad</b></p>
+              <p class="text-secondary">I'm extremely passionate about web development &amp; am extensively learning new technologies to level up my skills. I'm currently looking for new opportunity, Feel free to look around, or just say hi if you want to reach out. Want to know how I may help your project? Check out my project portfolio and online resume.</p>
+              <a href="resume.html" class="btn btn btn-primary btn-sm mb-2">View Resume<i class="fas fa-chevron-right ml-2"></i></a>
+              <a href="projects.html" class="btn btn btn-outline-dark btn-sm mb-2">View Projects<i class="fas fa-chevron-right ml-2"></i></a>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-1">
+              <div class="my-img-placeholder"></div>
+            </div>
+          </section>
+          <!-- hero section -->
+          <section class="row skills">
+            <div class="col-12">
+              <div class="card shadow-sm rounded-lg">
+                <div class="card-body">
+                  <h3 class="border-left border-primary pl-3">What I Do!</h3>
+                  <p class="text-secondary">I have experience in building small web apps. Below is a quick overview of my main technical skill sets and technologies I use. Want to find out more about my experience? Check out my <a href="resume.html" class="text-primary">online resume</a> and <a href="projects.html" class="text-primary">project portfolio</a>.</p>
+                  <!-- PROGRAMS ROW -->
+                  <div class="row skills-lang">
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p>
+                            <i class="fab fa-html5 fa-2x mr-1"></i>
+                            <i class="fab fa-css3-alt fa-2x"></i>
+                          </p>
+                          <h6 class="ff-heading font-weight-bold">HTML & CSS</h6>
+                          <p class="small text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis excepturi exercitationem, velit ut, illum maiores accusamus. A dicta porro libero.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p><i class="fab fa-js fa-2x"></i></p>
+                          <h6 class="ff-heading font-weight-bold">JAVASCRIPT</h6>
+                          <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magni ducimus at impedit voluptatibus enim corporis nisi sequi tempora, officiis.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p>
+                            <i class="fab fa-sass fa-2x mr-1"></i>
+                            <i class="fab fa-npm fa-2x mr-1"></i>
+                            <i class="fab fa-gulp fa-2x mr-1"></i>
+                          </p>
+                          <h6 class="ff-heading font-weight-bold">SASS, NPM, GULP</h6>
+                          <p class="small text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Voluptas, expedita soluta, possimus assumenda neque corrupti necessitatibus et fugiat facere eos.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p><i class="fab fa-react fa-2x"></i></p>
+                          <h6 class="ff-heading font-weight-bold">REACT</h6>
+                          <p class="small text-secondary">Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Eaque, ad. Aut minus reprehenderit vitae recusandae rem maiores dolorum, consectetur dolorem.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-lg-4 -->
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p>
+                            <i class="fab fa-node-js fa-2x"></i>
+                          </p>
+                          <h6 class="ff-heading font-weight-bold">NODE JS & EXPRESS</h6>
+                          <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem delectus, excepturi blanditiis dolor odit obcaecati, hic consequuntur placeat sint.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-lg-4 -->
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="card border-0 rounded-lg mb-2">
+                        <div class="card-body">
+                          <p><img src="./assets/mongodb.png" width="32" alt="mongodb"></p>
+                          <h6 class="ff-heading font-weight-bold">MONGO DB</h6>
+                          <p class="small text-secondary">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Sint deleniti possimus corrupti laborum accusamus illo atque animi incidunt voluptatum. Inventore id.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- col-lg-4 -->
+                  </div>
+                  <!-- PROGRAMS ROW -->
+                </div>
+                <!-- card-body wrapper -->
+              </div>
+              <!-- whole card wrapper -->
+            </div>
+            <!-- col-12 -->
+          </section>
+          <!-- skills row -->
+        </div>
+        <!-- content-wrapper -->
+      </div>
+      <!-- right-container -->
+    </div>
+    <!-- row no-gutters -->
+  </div>
+  <!-- container-fluid -->
+
+
+</body>
+
+</html>
