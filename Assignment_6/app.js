@@ -23,7 +23,7 @@ function displayTodos() {
   todosUl.innerHTML = "";
 
   if (todos.length === 0) {
-    let li = `<li class="list-group-item text-success text-center p-3">No tasks for today <i class="fa fa-thumbs-up"></i></li>`;
+    const li = `<li class="list-group-item text-success text-center p-3">No tasks for today <i class="fa fa-thumbs-up"></i></li>`;
     todosUl.innerHTML = li;
   } else {
     todos.forEach((item, index) => {
