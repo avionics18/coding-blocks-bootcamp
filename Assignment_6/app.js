@@ -86,26 +86,36 @@ function displayTodos() {
   }
 }
 
+// For First time call displayTodos()
 displayTodos();
 
 // ---------- ADD TASK FUNCTION -----------
-let form1 = document.querySelector("#addtodo-form");
-form1.onsubmit = function (e) {
-  e.preventDefault();
-  let input = e.target.querySelector("#addtask-input");
-  let newTask = input.value;
-  todos.push({
-    task: newTask,
-    isDone: false,
-  });
-
-  // then hide the form
-  hideDiv("addtodo-form-wrapper");
-  // empty the input
+document.querySelector("#todo-add-btn-wrapper button").onclick = function () {
+  
+  showDiv('addtodo-form-wrapper');
+  // whenever display the addtodo-form, input should be empty
+  let input = document.querySelector("#addtask-input");
   input.value = "";
-  // again call the displayTdos()
-  displayTodos();
-};
+
+  // Attach the onsubmit event to the form
+  let form1 = document.querySelector("#addtodo-form");
+  form1.onsubmit = function (e) {
+    e.preventDefault();
+    let newTask = input.value;
+    todos.push({
+      task: newTask,
+      isDone: false,
+    });
+    // then hide the form
+    hideDiv("addtodo-form-wrapper");
+    // empty the input
+    input.value = "";
+    // again call the displayTdos()
+    displayTodos();
+  };
+}
+
+
 
 // ---------- Helping Functions -----------
 function showDiv(div) {
